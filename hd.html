@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      action="url_spre_server"
+      method="post"
+      style="border: 1px black solid"
+    >
+      Basic User Information:
+      <br />
+      Full Name:
+      <input type="text" name="firstname" />
+      <br />
+      Email:
+      <input type="email" name="email" />
+      <br />
+      Password:
+      <input type="password" name="password" />
+
+      Confirm Password:
+      <input type="password" name="password" />
+      <br />
+      Gender:
+      <input type="radio" name="gender" value="Male" /> Male
+      <input type="radio" name="gender" value="female" /> Female
+      <input type="radio" name="gender" value="other" /> Other
+      <br />
+      Date of Birthd:
+      <input type="datetime-local" name="data" />
+    </form>
+    <br />
+    <form
+      action="url_spre_server"
+      method="post"
+      style="border: 1px black solid"
+    >
+      Adress Information:
+      <br />
+      Street Address:<label for="comment">
+        <textarea name="comment" id="comment" cols="30" rows="5"> </textarea>
+      </label>
+      <br />
+      <label for="cars">Country</label>
+      <select name="cars" id="cars">
+        <option value="Usa">Usa</option>
+        <option value="Russia">Russia</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Canada">Canada</option>
+        <option value="Germany">Germany</option>
+      </select>
+      <br />
+      City:
+      <input type="text" name="city" />
+      <br />
+      Postal code:
+      <input type="TEXT" name="text" />
+    </form>
+    <br />
+    <form
+      action="url_spre_server"
+      method="post"
+      style="border: 1px black solid"
+    >
+      Preferences:
+      <br />
+      Preffered Contact Metod
+      <input type="radio" name="email" value="email" />Email
+      <input type="radio" name="email" value="Phone" />Phone
+      <input type="radio" name="email" value="Postal Email" />Postal Email
+      <br />
+
+      Favorite Color:
+      <input type="color" name="color" />
+    </form>
+    <br />
+    <form
+      action="url_spre_server"
+      method="post"
+      style="border: 1px black solid"
+    >
+      Additional Details:
+      <br />
+      <label for="cars">How did you hear about us</label>
+      <select name="cars" id="cars">
+        <option value="Internet">Internet</option>
+        <option value="Friend">Friend</option>
+        <option value="Advertisement">Advertisement</option>
+      </select>
+      <br />
+      Feedback/Comments:
+      <label for="comment">
+        <textarea name="comment" id="comment" cols="30" rows="5"> </textarea>
+      </label>
+      <br />
+    </form>
+    <br />
+    <form
+      action="url_spre_server"
+      method="post"
+      style="border: 1px black solid"
+    >
+      Additional Details:
+      <br />
+      <label for="details">How did you hear about us</label>
+      <select name="details" id="details">
+        <option value="Internet">Internet</option>
+        <option value="Friend">Friend</option>
+        <option value="Advertisement">Advertisement</option>
+      </select>
+      <br />
+      Feedback/Comments:
+      <label for="feedback">
+        <textarea name="comment" id="comment" cols="30" rows="5"> </textarea>
+      </label>
+      <br />
+    </form>
+    <br />
+    <form
+      action="url_spre_server"
+      method="post"
+      style="border: 1px black solid"
+    >
+      Profile:
+      <br />
+      <label for="profilePicture">Profile Picture:</label>
+      <input
+        type="file"
+        id="profilePicture"
+        name="profilePicture"
+        accept=".jpg, .png"
+      /><br />
+      Website URL:
+      <input type="text" name="text" />
+      <br />
+      Experiens level for Html
+      <input
+        type="range"
+        id="experience"
+        name="experience"
+        min="1"
+        max="10"
+        oninput="displayValue.value=experience.value"
+      />
+    </form>
+    <input type="submit" value="Submit" />
+    <input type="reset" value="Reset" />
+  </body>
+</html>
